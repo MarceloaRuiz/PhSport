@@ -1,0 +1,23 @@
+{% extends 'PhSport/templates/../../../AppConsultorio/templates/AppConsultorio/base.html' %}
+
+{% block content %}
+  <h1>Detalle del paciente "{{ paciente.nombre }}"</h1>
+  <table>
+    <tr>
+      <td>Fecha de nacimiento:</td>
+      <td>{{ paciente.fecha_nacimiento }}</td>
+    </tr>
+    <tr>
+      <td>Email:</td>
+      <td>{{ paciente.email }}</td>
+    </tr>
+    <tr>
+      <td>Teléfono:</td>
+      <td>{{ paciente.telefono }}</td>
+    </tr>
+    <tr>
+      <td>Dirección:</td>
+      <td>{{ paciente.direccion }}</td>
+    </tr>
+  </table>
+{% endblock %}
